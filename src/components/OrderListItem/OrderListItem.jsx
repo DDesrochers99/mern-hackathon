@@ -1,4 +1,4 @@
-
+import './OrderListItem.css';
 
 export default function OrderListItem({ order, currentOrder, setCurrentOrder }) {
   return (
