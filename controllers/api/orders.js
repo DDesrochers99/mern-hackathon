@@ -11,7 +11,7 @@ module.exports = {
 
 // get all the orders for the logged in user
 async function index(req, res) {
-  const orders = await Order.find({ user: req.user._id});
+  const orders = await Order.find({ user: req.user._id, isPaid: true});
   res.json(orders);
 }
 
